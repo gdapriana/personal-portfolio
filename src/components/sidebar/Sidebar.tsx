@@ -16,7 +16,7 @@ import DiscordIcon from "@/assets/images/discord.png";
 export default function Sidebar() {
 	return (
 		<div className="w-full h-full my-auto<<<< flex flex-col gap-4">
-			<Header />
+   		<Header />
 			<Divider />
 			<Navigation />
 			<Divider />
@@ -102,7 +102,7 @@ const Header = () => {
 				</p>
 				<div className="flex cursor-pointer bg-neutral-200 dark:bg-neutral-800 px-2 py-1 rounded-md">
 					<div className="text-neutral-600 dark:text-neutral-400 text-sm flex gap-1" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-						{theme === "light" ? <p className="flex gap-1 justify-center items-center"><SunIcon className="w-4 text-neutral-400" />Light</p> : <p className="flex gap-1 justify-center items-center"><MoonIcon className="w-4 text-neutral-400" />Dark</p>}
+						{theme === "light" ? <div className="flex gap-1 justify-center items-center"><SunIcon className="w-4 text-neutral-400" />Light</div> : <div className="flex gap-1 justify-center items-center"><MoonIcon className="w-4 text-neutral-400" />Dark</div>}
 					</div>
 				</div>
 			</div>
