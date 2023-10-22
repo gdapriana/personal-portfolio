@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import profile from "@/assets/images/apriana.png";
 import { RocketLaunchIcon } from "@heroicons/react/24/outline";
 import { CheckBadgeIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
@@ -15,8 +15,8 @@ import DiscordIcon from "@/assets/images/discord.png";
 
 export default function Sidebar() {
 	return (
-		<div className="w-full h-full my-auto<<<< flex flex-col gap-4">
-   		<Header />
+		<div className="w-full h-full justify-center items-center flex flex-col gap-4">
+			<Header />
 			<Divider />
 			<Navigation />
 			<Divider />
@@ -32,7 +32,7 @@ const metadata: {
 	tag: string;
 	hired: boolean;
 	navigations: { name: string; path: string; icon?: string }[];
-	social: {name: string; path: string, icon?: any}[];
+	social: { name: string; path: string; icon?: any }[];
 	footer: string;
 } = {
 	name: "Gede Apriana",
@@ -66,14 +66,34 @@ const metadata: {
 		},
 	],
 	social: [
-		{name: "github", path: "https://github.com/icequeenwand", icon: GithubIcon},
-		{name: "whatsapp", path: "wa.me/6281339486902", icon: WhatsappIcon},
-		{name: "instagram", path: "https://instagram.com/gdaprianaa", icon: InstagramIcon},
-		{name: "twitter", path: "https://twitter.com/gdaprianaa", icon: TwitterIcon},
-		{name: "facebook", path: "https://facebook.com/gdapriana", icon: FacebookIcon},
-		{name: "discord", path: "https://github.com/icequeenwand", icon: DiscordIcon},
+		{
+			name: "github",
+			path: "https://github.com/icequeenwand",
+			icon: GithubIcon,
+		},
+		{ name: "whatsapp", path: "wa.me/6281339486902", icon: WhatsappIcon },
+		{
+			name: "instagram",
+			path: "https://instagram.com/gdaprianaa",
+			icon: InstagramIcon,
+		},
+		{
+			name: "twitter",
+			path: "https://twitter.com/gdaprianaa",
+			icon: TwitterIcon,
+		},
+		{
+			name: "facebook",
+			path: "https://facebook.com/gdapriana",
+			icon: FacebookIcon,
+		},
+		{
+			name: "discord",
+			path: "https://github.com/icequeenwand",
+			icon: DiscordIcon,
+		},
 	],
-	footer: "Create with ❤️ by"
+	footer: "Create with ❤️ by",
 };
 
 const Header = () => {
@@ -93,7 +113,9 @@ const Header = () => {
 				<h1 className="text-neutral-600 dark:text-neutral-200 text-base font-bold flex gap-1">
 					{metadata.name} <CheckBadgeIcon className="w-5 text-blue-500" />
 				</h1>
-				<p className="text-sm text-neutral-400 dark:text-neutral-500">{metadata.tag}</p>
+				<p className="text-sm text-neutral-400 dark:text-neutral-500">
+					{metadata.tag}
+				</p>
 			</div>
 			<div className="w-full flex justify-between gap-2 items-center">
 				<p className="text-sm bg-neutral-200 dark:bg-neutral-800 px-2 py-1 rounded-md text-neutral-600 dark:text-neutral-400 flex gap-1">
@@ -101,8 +123,12 @@ const Header = () => {
 					Available for hired
 				</p>
 				<div className="flex cursor-pointer bg-neutral-200 dark:bg-neutral-800 px-2 py-1 rounded-md">
-					<div className="text-neutral-600 dark:text-neutral-400 text-sm flex gap-1" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-						{theme === "light" ? <div className="flex gap-1 justify-center items-center"><SunIcon className="w-4 text-neutral-400" />Light</div> : <div className="flex gap-1 justify-center items-center"><MoonIcon className="w-4 text-neutral-400" />Dark</div>}
+					<div
+						className="text-neutral-600 dark:text-neutral-400 text-sm flex gap-1"
+						onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+					>
+						<SunIcon className="w-4" />
+						Light
 					</div>
 				</div>
 			</div>
@@ -153,21 +179,23 @@ const SocialMedia = () => {
 						<Link key={index} href={item.path}>
 							<Image width={25} src={item.icon} alt={item.name} />
 						</Link>
-					)
+					);
 				})}
 			</div>
 		</div>
-	)
-}
+	);
+};
 
 const Footer = () => {
 	return (
 		<div className="w-full flex justify-center items-center">
-			<p className="text-sm text-neutral-400">{metadata.footer} {metadata.tag}</p>
+			<p className="text-sm text-neutral-400">
+				{metadata.footer} {metadata.tag}
+			</p>
 		</div>
 	);
-}
+};
 
 const Divider = () => {
 	return <div className="w-full my-2 border-b dark:border-neutral-800"></div>;
-}
+};
