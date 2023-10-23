@@ -4,8 +4,8 @@ const projectSchema = new Schema(
   {
     title: String,
     description: String,
-    language: String,
-    technology: Array,
+    language: Object,
+    technology: Object,
     github: String,
   },
   {
