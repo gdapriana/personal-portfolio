@@ -8,7 +8,7 @@ import GithubIcon from "@/assets/images/github2.png";
 
 export default function ProjectCard({data}: {data: any}) {
   return (
-    <div className="max-w-sm flex flex-col relative overflow-hidden bg-white border border-gray-200 rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
+    <div className="max-w-sm flex flex-col overflow-hidden bg-white border border-gray-200 rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
       <div
         className="w-full bg-cover grayscale h-12"
         style={{

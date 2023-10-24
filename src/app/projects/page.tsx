@@ -13,7 +13,7 @@ const metadata: any = {
 export default function Project() {
   const [view, setView] = useState("card");
   return (
-    <div className="w-full h-full overflow-hidden">
+    <div className="w-full h-full flex flex-col justify-start items-center overflow-hidden">
       <Header metadata={metadata} />
       <Divider />
       <ViewButton view={view} setView={setView} />

@@ -25,7 +25,7 @@ export default function RootLayout({
 							<div className="h-full hidden sm:flex">
 								<Sidebar />
 							</div>
-							<div className="flex-1 py-16 sm:py-24">{children}</div>
+							<div className="flex-1 py-16 h-full overflow-hidden sm:py-24">{children}</div>
 						</div>
 					</main>
 				</ThemeProvider>

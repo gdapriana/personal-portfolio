@@ -10,11 +10,9 @@ export default function ProjectSection ({ view }: { view: string }) {
     axios.get("http://localhost:3000/api/projects").then((response: any) => setProjects(response.data.projects)).catch((error)=> console.log(error))
   }, [])
 
-  console.log(projects);
-
   if (view === "card") {
     return (
-      <div className="w-full gap-2 grid mt-4 grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+      <div className="w-full flex-1 overflow-auto auto-rows-max gap-4 grid mt-4 grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
         {projects.map((item: any) => <ProjectCard key={item._id} data={item} />)}
       </div>
     );
