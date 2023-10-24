@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
-import Header from "@/components/globals/Header"
+import Header from "@/components/globals/Header";
 import ViewButton from "@/components/projects/ViewButton";
-import Pagination from "@/components/projects/Pagination";
 import ProjectSection from "@/components/projects/ProjectSection";
 import Divider from "@/components/globals/Divider";
 
@@ -19,7 +18,6 @@ export default function Project() {
       <Divider />
       <ViewButton view={view} setView={setView} />
       <ProjectSection view={view} />
-      <Pagination />
     </div>
   );
 }

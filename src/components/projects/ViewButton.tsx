@@ -2,7 +2,7 @@ import { ListBulletIcon, Square2StackIcon } from "@heroicons/react/24/outline";
 
 export default function ViewButton ({ view, setView }: { view: string; setView: any }) {
   return (
-    <div className="w-full flex justify-end items-center gap-2">
+    <div className="w-full flex justify-end my-4 items-center gap-2">
       <p className="text-sm text-neutral-400">Change View</p>
       <div
         onClick={() => setView("card")}

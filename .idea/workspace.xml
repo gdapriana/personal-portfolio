@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7430f66d-0ab4-47fd-ae89-da0ac423e05b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/blogs/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/globals/Divider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/globals/LoadingAnimation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/blogs/[id]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/blogs/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/blogs/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blogs/BlogCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blogs/BlogSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blogs/blog/BlogContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blogs/blog/BlogHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blogs/blog/BlogOwner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/blog.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/blogs/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/blogs/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/globals/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/ProjectSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ProjectSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/globals/Divider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/globals/Divider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Pagination.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/ViewButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ViewButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +117,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\redqueen\\WebstormProjects\\portfolio\\node_modules\\prettier",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\redqueen\\WebstormProjects\\personal-portfolio\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "C:\\Users\\redqueen\\WebstormProjects\\personal-portfolio\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -137,6 +146,8 @@
       <workItem from="1698028714555" duration="2979000" />
       <workItem from="1698050089557" duration="1122000" />
       <workItem from="1698051244033" duration="3318000" />
+      <workItem from="1698147987292" duration="1131000" />
+      <workItem from="1698151864209" duration="11331000" />
     </task>
     <servers />
   </component>
