@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7430f66d-0ab4-47fd-ae89-da0ac423e05b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/blogs/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/globals/Divider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/globals/LoadingAnimation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Pagination.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/ProjectCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ProjectCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/ProjectList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ProjectList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/globals/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/ProjectSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ProjectSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/Sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "development",
-    "last_opened_file_path": "C:/Users/redqueen/WebstormProjects/portfolio/src/assets/images",
+    "last_opened_file_path": "C:/Users/redqueen/WebstormProjects/personal-portfolio/src/components/globals",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,6 +116,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\redqueen\WebstormProjects\personal-portfolio\src\components\globals" />
       <recent name="C:\Users\redqueen\WebstormProjects\portfolio\src\assets\images" />
     </key>
   </component>

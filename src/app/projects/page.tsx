@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
-import Header from "@/components/projects/Header"
+import Header from "@/components/globals/Header"
 import ViewButton from "@/components/projects/ViewButton";
 import Pagination from "@/components/projects/Pagination";
 import ProjectSection from "@/components/projects/ProjectSection";
+import Divider from "@/components/globals/Divider";
 
 const metadata: any = {
   title: "Projects",
@@ -22,10 +23,3 @@ export default function Project() {
     </div>
   );
 }
-
-
-
-
-const Divider = () => {
-  return <div className="w-full dark:border-neutral-800 border-b my-4"></div>;
-};

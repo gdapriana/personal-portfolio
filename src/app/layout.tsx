@@ -20,7 +20,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={inter.className}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-					<main className="w-full h-screen dark:bg-neutral-900 p-8 sm:p-16 flex justify-center items-start">
+					<main className="w-full h-screen dark:bg-neutral-900 p-8 sm:p-8 flex justify-center items-start">
 						<div className="w-full h-full max-w-6xl gap-8 flex">
 							<div className="h-full hidden sm:flex">
 								<Sidebar />
