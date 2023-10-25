@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7430f66d-0ab4-47fd-ae89-da0ac423e05b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/api/blogs/[id]/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/blogs/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/blogs/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/blogs/BlogCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/blogs/BlogSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/blogs/blog/BlogContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/blogs/blog/BlogHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/blogs/blog/BlogOwner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/blog.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/blogs/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/blogs/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/globals/Divider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/globals/Divider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Pagination.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/ViewButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/ViewButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/blogs/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/blogs/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blogs/blog/BlogContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blogs/blog/BlogContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blogs/blog/BlogOwner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blogs/blog/BlogOwner.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,24 +91,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "development",
-    "last_opened_file_path": "C:/Users/redqueen/WebstormProjects/personal-portfolio/src/components/globals",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\redqueen\\WebstormProjects\\personal-portfolio\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\redqueen\\WebstormProjects\\personal-portfolio\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/redqueen/WebstormProjects/personal-portfolio/src/components/globals&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\redqueen\\WebstormProjects\\personal-portfolio\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\redqueen\\WebstormProjects\\personal-portfolio\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\redqueen\WebstormProjects\personal-portfolio\src\components\globals" />
@@ -147,7 +133,9 @@
       <workItem from="1698050089557" duration="1122000" />
       <workItem from="1698051244033" duration="3318000" />
       <workItem from="1698147987292" duration="1131000" />
-      <workItem from="1698151864209" duration="11331000" />
+      <workItem from="1698151864209" duration="11364000" />
+      <workItem from="1698201910380" duration="1939000" />
+      <workItem from="1698206209238" duration="2482000" />
     </task>
     <servers />
   </component>
