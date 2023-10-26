@@ -6,6 +6,7 @@ const educationSchema = new Schema({
   location: String,
   date: Date,
   categories: Array,
+  major: String
 });
 
 const Education =

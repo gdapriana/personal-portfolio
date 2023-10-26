@@ -10,13 +10,12 @@ const blogSchema = new Schema(
     readTime: Number,
     categories: Array,
     createdAt: Date,
-    updatedAt: Date
+    updatedAt: Date,
   },
   {
     timestamps: true,
   },
 );
 
-const Blog =
-  mongoose.models.Blog || mongoose.model("Blog", blogSchema);
+const Blog = mongoose.models.Blog || mongoose.model("Blog", blogSchema);
 export default Blog;
