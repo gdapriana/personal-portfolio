@@ -5,6 +5,7 @@ import { Simulate } from "react-dom/test-utils";
 import BlogHeader from "@/components/blogs/blog/BlogHeader";
 import BlogOwner from "@/components/blogs/blog/BlogOwner";
 import BlogContent from "@/components/blogs/blog/BlogContent";
+import Divider from "@/components/globals/Divider";
 
 export default function Blog({ params }: { params: any }) {
   const [blog, setBlog] = useState({
@@ -18,16 +19,18 @@ export default function Blog({ params }: { params: any }) {
   }, [params.id]);
 
   return (
-    <div className="w-full flex flex-col h-full bg-red-500 overflow-scroll justify-start items-center">
+    <div className="w-full h-full flex flex-col justify-start items-center">
       <div
         className="w-full h-40 lg:h-80 bg-cover bg-center rounded-xl"
         style={{ backgroundImage: `url(${blog?.cover})` }}
       ></div>
 
-      <div className="w-full flex flex-col">
+      <Divider />
+
+      <div className="w-full flex flex-col flex-1 overflow-auto hide-scrollbar justify-start items-center">
         <BlogHeader data={blog} />
-        <BlogOwner data={blog} />
         <BlogContent data={blog} />
+        <BlogOwner data={blog} />
       </div>
     </div>
   );

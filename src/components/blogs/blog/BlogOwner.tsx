@@ -6,7 +6,7 @@ export default function BlogOwner({ data }: { data: any }) {
   const date = parseISO(data.createdAt);
   console.log(`b ${date}`);
   return (
-    <div className="w-full dark:border-neutral-800 py-4 border-y flex justify-between items-center">
+    <div className="w-full my-8 dark:border-neutral-800 py-4 border-y flex justify-between items-center">
       <div className="flex justify-start items-center gap-2">
         <div className="w-8 grayscale rounded-full overflow-hidden aspect-square">
           <Image src={ImageProfile} alt="profile" />

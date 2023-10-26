@@ -1,19 +1,19 @@
 import Header from "@/components/globals/Header";
 import Divider from "@/components/globals/Divider";
-import BlogSection from "@/components/blogs/BlogSection";
+import EducationSection from "@/components/educations/EducationSection";
 
 const metadata: any = {
-  title: "Blogs",
+  title: "Educations",
   subtitle:
-    "Here I store my thoughts and ideas on a variety of topics, from technology and current events to personal experiences and reflections. I hope you enjoy my writing!",
+    "A place to share my educational journey, including my learnings, insights, and experiences.",
 };
 
-export default function Blogs() {
+export default function Educations() {
   return (
     <div className="w-full h-full flex flex-col justify-start items-center overflow-hidden">
       <Header metadata={metadata} />
       <Divider />
-      <BlogSection />
+      <EducationSection />
     </div>
   );
 }

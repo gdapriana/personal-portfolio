@@ -1,24 +1,25 @@
 import Image from "next/image";
-import LaravelIcon from "@/assets/images/laravel.png";
-import PythonIcon from "@/assets/images/python.png";
-import NumPyIcon from "@/assets/images/numpy.svg";
-import PandasIcon from "@/assets/images/pandas.png";
 import Link from "next/link";
 import GithubIcon from "@/assets/images/github2.png";
 
-export default function ProjectCard({data}: {data: any}) {
+export default function ProjectCard({ data }: { data: any }) {
   return (
     <div className="max-w-sm flex flex-col overflow-hidden bg-white border border-gray-200 rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
       <div
         className="w-full bg-cover grayscale h-12"
         style={{
-          backgroundImage:
-            `url(https://source.unsplash.com/random/1920x1080?${data.language.title})`,
+          backgroundImage: `url(https://source.unsplash.com/random/1920x1080?${data.language.title})`,
         }}
       ></div>
       <div className="w-full flex p-4 gap-4 justify-center items-center">
         <div className="">
-          <Image className="w-8" width={1000} height={1000} src={data.language.icon} alt="image" />
+          <Image
+            className="w-8"
+            width={1000}
+            height={1000}
+            src={data.language.icon}
+            alt="image"
+          />
         </div>
         <div className="flex-1">
           <div className="flex flex-col gap-1">
@@ -31,7 +32,17 @@ export default function ProjectCard({data}: {data: any}) {
           </div>
           <div className="flex mt-4 w-full gap-2 justify-between">
             <div className="gap-2 hidden sm:flex overflow-x-auto md:hidden lg:flex justify-center items-center">
-              {data.technology.map((item: any, index: number) => <Link key={index} href={item.link}><Image src={item.icon} width={1000} height={1000} alt="python" className="w-4 grayscale" /></Link>)}
+              {data.technology.map((item: any, index: number) => (
+                <Link key={index} href={item.link}>
+                  <Image
+                    src={item.icon}
+                    width={1000}
+                    height={1000}
+                    alt="python"
+                    className="w-4 grayscale"
+                  />
+                </Link>
+              ))}
             </div>
             <div className="flex justify-center items-center">
               <Link
