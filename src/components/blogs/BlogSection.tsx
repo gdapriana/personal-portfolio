@@ -9,7 +9,7 @@ export default function BlogSection() {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     axios
-      .get(`${process.env.NEXTAUTH_URL}/api/blogs`)
+      .get(`http://localhost:3000/api/blogs`)
       .then((response) => setBlogs(response.data.blogs))
       .catch((error) => console.log(error));
   }, []);

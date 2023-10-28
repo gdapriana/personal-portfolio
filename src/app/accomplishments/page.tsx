@@ -1,3 +1,5 @@
+import AccomplishmentSection from "@/components/accomplishments/AccomplishmentSection";
+import Divider from "@/components/globals/Divider";
 import Header from "@/components/globals/Header";
 
 const metadata: { title: string; subtitle: string } = {
@@ -7,5 +9,11 @@ const metadata: { title: string; subtitle: string } = {
 };
 
 export default function Accomplishments() {
-  return <Header metadata={metadata} />;
+  return (
+    <div className="w-full h-full flex flex-col justify-start items-center overflow-hidden">
+      <Header metadata={metadata} />
+      <Divider />
+      <AccomplishmentSection />
+    </div>
+  );
 }
