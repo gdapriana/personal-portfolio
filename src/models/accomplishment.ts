@@ -3,13 +3,13 @@ import mongoose, { Schema } from "mongoose";
 const accomplishmentSchema = new Schema(
   {
     title: String,
-    organization: String,
+    organization: Object,
     publicationDate: Date,
     expirationDate: Date,
     credentialId: String,
     credentialUrl: String,
     expertise: Array,
-    cover: String,
+    credentialImage: String,
   },
   {
     timestamps: true,

@@ -8,12 +8,17 @@ const nextConfig = {
     config.experiments = {
       ...config.experiments,
       topLevelAwait: true,
-    }
-    return config
+    };
+    return config;
   },
   images: {
-    domains: ["cdn1.iconfinder.com", "cdn4.iconfinder.com", "seeklogo.com"]
-  }
-}
+    domains: [
+      "cdn1.iconfinder.com",
+      "cdn4.iconfinder.com",
+      "seeklogo.com",
+      "drive.google.com",
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
