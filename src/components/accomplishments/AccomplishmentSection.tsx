@@ -16,7 +16,7 @@ export default function AccomplishmentSection() {
 
   if (accomplishments.length !== 0) {
     return (
-      <div className="w-full flex-1 hide-scrollbar py-8 overflow-auto auto-rows-max gap-4 grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+      <div className="w-full flex-1 hide-scrollbar py-8 overflow-auto auto-rows-max gap-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
         {accomplishments.map((item: any) => (
           <AccomplishmentCard key={item?._id} data={item} />
         ))}
