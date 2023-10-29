@@ -9,7 +9,7 @@ export default function AccomplishmentSection() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/accomplishments")
+      .get(`${process.env.NEXT_PUBLIC_LINK}/api/accomplishments`)
       .then((response) => setAccomplishment(response.data.accomplishments))
       .catch((error) => console.log(error));
   }, []);

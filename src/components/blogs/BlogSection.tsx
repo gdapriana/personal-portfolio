@@ -9,7 +9,7 @@ export default function BlogSection() {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/blogs`)
+      .get(`${process.env.NEXT_PUBLIC_LINK}/api/blogs`)
       .then((response) => setBlogs(response.data.blogs))
       .catch((error) => console.log(error));
   }, []);
