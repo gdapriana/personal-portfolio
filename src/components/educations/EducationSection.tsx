@@ -9,7 +9,7 @@ export default function EducationSection() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/educations")
+      .get(`${process.env.NEXT_PUBLIC_LINK}/api/educations`)
       .then((response) => setEducation(response.data.educations))
       .catch((error) => console.log(error));
   }, []);
