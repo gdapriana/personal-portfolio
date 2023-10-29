@@ -13,7 +13,7 @@ export default function Blog({ params }: { params: any }) {
   });
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/blogs/${params.id}`)
+      .get(`${process.env.NEXT_PUBLIC_LINK}/api/blogs/${params.id}`)
       .then((response) => setBlog(response.data.blog))
       .catch((error) => console.log(error));
   }, [params.id]);
