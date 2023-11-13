@@ -30,11 +30,11 @@ export default function Header() {
   return (
     <header className="w-full gap-4 pt-20 flex justify-center items-start flex-col">
       <div className="h-8">
-        <span className="text-3xl font-bold text-neutral-400">
-          いらっしゃいませ
+        <span className="text-3xl font-bold text-neutral-600 dark:text-neutral-200">
+          Hello World 👋
         </span>
       </div>
-      <h1 className="text-neutral-600 text-lg">
+      <h1 className="text-neutral-400 text-lg">
         I&apos;m <span className="font-bold">{metadata.name}</span>, pasonates
         with{" "}
         {metadata.pationates.map((item, index) => (
