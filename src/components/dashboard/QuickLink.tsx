@@ -9,10 +9,8 @@ const metadata: {
     name: string;
     path: string;
     icon?: string;
-    description: string;
+    description?: string;
   }[];
-  social: { name: string; path: string; icon?: any }[];
-  footer: string;
 } = {
   name: "Gede Apriana",
   tag: "@gdaprianaa",
