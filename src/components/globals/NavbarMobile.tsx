@@ -39,14 +39,13 @@ const NavbarMobile = () => {
           <Bars3Icon className="w-8" />
         </div>
       </div>
-
     </>
   )
 }
 
 const FloatNav = ({showFloatNav, setShowFloatNav}: {showFloatNav: any; setShowFloatNav: any}) => {
   return (
-    <div className={`${showFloatNav ? "flex" : "hidden"} absolute duration-300 ease-in-out top-0 h-screen w-full justify-center items-center left-0 z-30 bg-white dark:bg-neutral-900`}>
+    <div className={`${showFloatNav ? "flex" : "hidden"} absolute duration-300 ease-in-out top-0 h-screen w-full flex-col gap-16 justify-center items-center left-0 z-30 bg-white dark:bg-neutral-900`}>
       <div className="absolute top-0 m-4 right-0" onClick={() => setShowFloatNav(false)}>
         <XMarkIcon className="w-8 text-neutral-600 dark:text-neutral-400" />
       </div>
@@ -79,8 +78,32 @@ const FloatNav = ({showFloatNav, setShowFloatNav}: {showFloatNav: any; setShowFl
           })
         }
       </div>
+      <SocialMedia />
     </div>
   ) 
 }
+
+const SocialMedia = () => {
+  return (
+    <div className="w-full flex flex-col gap-2 justify-center items-center">
+      <h1 className="text-neutral-600 text-sm">Connect with me</h1>
+      <div className="w-full flex gap-2 justify-center items-center">
+        {metadata.social.map((item, index) => {
+          return (
+            <Link key={index} href={item.path}>
+              <Image
+                width={25}
+                className="grayscale"
+                src={item.icon}
+                alt={item.name}
+              />
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
 
 export default NavbarMobile
