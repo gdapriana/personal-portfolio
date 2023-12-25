@@ -1,5 +1,7 @@
+"use client"
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import {circOut, motion as m} from "framer-motion"
 
 const metadata: {
   name: string;
@@ -61,36 +63,38 @@ const QuickLink = () => {
       <div className="w-full grid grid-cols-1 sm:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 grid-auto-rows">
         {metadata.navigations.map((item: any, index: number) => {
           return (
-            <Link
-              href={item.path}
-              key={index}
-              className="flex justify-center items-center gap-4 border dark:border-neutral-800 rounded-xl p-4"
-            >
-              <div className="">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-12 text-neutral-600 dark:text-neutral-400"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d={item.icon}
-                  />
-                </svg>
-              </div>
-              <div className="flex-1">
-                <h1 className="text-neutral-600 dark:text-neutral-400 font-bold text-md">
-                  {item.name}
-                </h1>
-                <p className="cutoff-text text-neutral-400 dark:text-neutral-600 cutoff-text-2 text-sm">
-                  {item.description}
-                </p>
-              </div>
-            </Link>
+            <m.div initial={{opacity: 0, y: 40}} transition={{duration: 1, ease: "circOut" ,delay: index * 0.1}} animate={{opacity: 1, y: 0}} className="">
+              <Link
+                href={item.path}
+                key={index}
+                className="flex justify-center hover:scale-95 transition-all ease-in-out duration-300 items-center gap-4 border dark:border-neutral-800 rounded-xl p-4"
+              >
+                <div className="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-12 text-neutral-600 dark:text-neutral-400"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d={item.icon}
+                    />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h1 className="text-neutral-600 dark:text-neutral-400 font-bold text-md">
+                    {item.name}
+                  </h1>
+                  <p className="cutoff-text text-neutral-400 dark:text-neutral-600 cutoff-text-2 text-sm">
+                    {item.description}
+                  </p>
+                </div>
+              </Link>
+            </m.div>
           );
         })}
       </div>
