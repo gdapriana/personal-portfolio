@@ -39,20 +39,19 @@ const About = () => {
                 index: number,
               ) => {
                 return (
-                  <m.div key={item._id} initial={{opacity: 0, y: 40}} transition={{duration: 1,ease: "circOut", delay: index * 0.1}} animate={{opacity: 1, y: 0}} className="">
-                    <Link
-                      className="p-2 transition-all grayscale hover:grayscale-0 duration-300"
-                      href={item.link}
-                    >
-                      <Image
-                        className="w-12"
-                        width={100}
-                        height={100}
-                        src={item.image}
-                        alt=""
-                      />
-                    </Link>
-                  </m.div>
+                  <Link
+                    key={index}
+                    className="p-2 transition-all grayscale hover:grayscale-0 duration-300"
+                    href={item.link}
+                  >
+                    <Image
+                      className="w-12"
+                      width={100}
+                      height={100}
+                      src={item.image}
+                      alt=""
+                    />
+                  </Link>
                 );
               },
             )}
