@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'montserrat';
+  src: url("../assets/fonts/montserrat.ttf");
+}
+
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'montserrat';
 }
 
 .hide-scrollbar::-webkit-scrollbar {
