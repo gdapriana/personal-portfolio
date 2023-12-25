@@ -63,10 +63,9 @@ const QuickLink = () => {
       <div className="w-full grid grid-cols-1 sm:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 grid-auto-rows">
         {metadata.navigations.map((item: any, index: number) => {
           return (
-            <m.div initial={{opacity: 0, y: 40}} transition={{duration: 1, ease: "circOut" ,delay: index * 0.1}} animate={{opacity: 1, y: 0}} className="">
+            <m.div key={index} initial={{opacity: 0, y: 40}} transition={{duration: 1, ease: "circOut" ,delay: index * 0.1}} animate={{opacity: 1, y: 0}} className="">
               <Link
                 href={item.path}
-                key={index}
                 className="flex justify-center hover:scale-95 transition-all ease-in-out duration-300 items-center gap-4 border dark:border-neutral-800 rounded-xl p-4"
               >
                 <div className="">
