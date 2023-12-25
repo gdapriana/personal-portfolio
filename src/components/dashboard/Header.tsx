@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className="w-full gap-4 pt-8 flex justify-center items-start flex-col">
       <div className="h-8">
-        <span className="text-3xl font-bold text-neutral-600 dark:text-neutral-200">
+        <span className="text-3xl font-bold dark:text-neutral-200 __gradient-text">
           Hello World 👋
         </span>
       </div>
