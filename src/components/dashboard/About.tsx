@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import {motion as m, stagger} from "framer-motion"
 
  const metadata = {
   aboutText: "I am <b>I Komang Gede Apriana</b>, an active student of Informatics Department class of 2021, <b>Udayana University</b>. I am a dedicated and experienced Web Developer (Fullstack Developer) with a strong interest in Machine Learning. Have in-depth knowledge and strong skills in UI/UX Designer and Data Analyst."
@@ -38,19 +39,21 @@ const About = () => {
                 index: number,
               ) => {
                 return (
-                  <Link
-                    className="p-2 transition-all grayscale hover:grayscale-0 duration-300"
-                    href={item.link}
-                    key={item._id}
-                  >
-                    <Image
-                      className="w-12"
-                      width={100}
-                      height={100}
-                      src={item.image}
-                      alt=""
-                    />
-                  </Link>
+                  <m.div initial={{opacity: 0, y: 40}} transition={{duration: 1,ease: "circOut", delay: index * 0.1}} animate={{opacity: 1, y: 0}} className="">
+                    <Link
+                      className="p-2 transition-all grayscale hover:grayscale-0 duration-300"
+                      href={item.link}
+                      key={item._id}
+                    >
+                      <Image
+                        className="w-12"
+                        width={100}
+                        height={100}
+                        src={item.image}
+                        alt=""
+                      />
+                    </Link>
+                  </m.div>
                 );
               },
             )}

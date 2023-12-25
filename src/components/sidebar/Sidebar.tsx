@@ -5,6 +5,7 @@ import { CheckBadgeIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import {motion as m} from "framer-motion"
 
 import GithubIcon from "@/assets/images/github.png";
 import WhatsappIcon from "@/assets/images/whatsapp.png";
@@ -14,7 +15,8 @@ import FacebookIcon from "@/assets/images/facebook.png";
 import DiscordIcon from "@/assets/images/discord.png";
 export default function Sidebar() {
   return (
-    <div className="w-full h-full justify-center items-center flex flex-col gap-4">
+    <div className="w-full relative h-full justify-center items-center flex flex-col gap-4">
+      <m.div animate={{height: "0%", opacity: 0}} transition={{duration: 1, ease: "circOut"}} className="absolute left-0 top-0 h-full w-full bg-white border-b dark:bg-neutral-900 z-50"></m.div>
       <Header />
       <Divider />
       <Navigation />
@@ -95,6 +97,9 @@ const metadata: {
 };
 const Header = () => {
   const { theme, setTheme } = useTheme();
+  const nightToggle = () => {
+    setTheme(theme === "dark" ? "light" : "dark")
+  }
   return (
     <div className="w-full gap-4 flex flex-col justify-center items-center">
       <div>
@@ -119,13 +124,15 @@ const Header = () => {
           <RocketLaunchIcon className="w-4" />
           Available for hired
         </p>
-        <div className="flex cursor-pointer bg-neutral-200 dark:bg-neutral-800 px-2 py-1 rounded-md">
+        <div onClick={() => nightToggle()} className="flex cursor-pointer transition-all ease-in-out duration-300 hover:scale-95 bg-neutral-200 dark:bg-neutral-800 px-2 py-1 rounded-md">
           <div
-            className="text-neutral-600 dark:text-neutral-400 text-sm flex gap-1"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="text-neutral-600  dark:text-neutral-400 text-sm flex gap-1"
           >
-            <SunIcon className="w-4" />
-            Light
+            {
+              theme === "light" ? <><SunIcon className="w-4" />Light</> : <><MoonIcon className="w-4" />Dark</>
+            }
+            {/* <SunIcon className="w-4" />
+            Light */}
           </div>
         </div>
       </div>
@@ -133,6 +140,7 @@ const Header = () => {
   );
 };
 const Navigation = () => {
+  
   return (
     <div className="w-full flex flex-col">
       <ul className="w-full flex flex-col">

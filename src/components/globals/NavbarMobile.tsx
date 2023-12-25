@@ -6,13 +6,15 @@ import { CheckBadgeIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useTheme } from "next-themes";
 
 const NavbarMobile = () => {
+  const { theme, setTheme } = useTheme();
   const [showFloatNav, setShowFloatNav] = useState(false)
   return (
     <> 
       <FloatNav showFloatNav={showFloatNav} setShowFloatNav={setShowFloatNav} />
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between gap-4 items-center">
         <div className="flex justify-center items-center gap-4">
           <div className="flex justify-center items-center">
             <Image
@@ -28,18 +30,22 @@ const NavbarMobile = () => {
             <p className="text-neutral-400 text-sm">{metadata.tag}</p>
           </div>
         </div>
+        <div className="ms-auto" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+          {
+            theme === "dark" ? <MoonIcon className="w-5" /> : <SunIcon className="w-5" />
+          }
+        </div>
         <div className="" onClick={() => setShowFloatNav(true)}>
           <Bars3Icon className="w-8" />
         </div>
       </div>
-
     </>
   )
 }
 
 const FloatNav = ({showFloatNav, setShowFloatNav}: {showFloatNav: any; setShowFloatNav: any}) => {
   return (
-    <div className={`${showFloatNav ? "flex" : "hidden"} absolute duration-300 ease-in-out top-0 h-screen w-full justify-center items-center left-0 z-30 bg-white dark:bg-neutral-900`}>
+    <div className={`${showFloatNav ? "flex" : "hidden"} absolute duration-300 ease-in-out top-0 h-screen w-full flex-col gap-16 justify-center items-center left-0 z-30 bg-white dark:bg-neutral-900`}>
       <div className="absolute top-0 m-4 right-0" onClick={() => setShowFloatNav(false)}>
         <XMarkIcon className="w-8 text-neutral-600 dark:text-neutral-400" />
       </div>
@@ -72,8 +78,32 @@ const FloatNav = ({showFloatNav, setShowFloatNav}: {showFloatNav: any; setShowFl
           })
         }
       </div>
+      <SocialMedia />
     </div>
   ) 
 }
+
+const SocialMedia = () => {
+  return (
+    <div className="w-full flex flex-col gap-2 justify-center items-center">
+      <h1 className="text-neutral-600 text-sm">Connect with me</h1>
+      <div className="w-full flex gap-2 justify-center items-center">
+        {metadata.social.map((item, index) => {
+          return (
+            <Link key={index} href={item.path}>
+              <Image
+                width={25}
+                className="grayscale"
+                src={item.icon}
+                alt={item.name}
+              />
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
 
 export default NavbarMobile

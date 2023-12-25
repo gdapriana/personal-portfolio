@@ -1,6 +1,5 @@
 "use client";
-// import Typed from "@types/typed.js";
-import { useRef, useEffect } from "react";
+import {motion as m} from "framer-motion"
 
 const metadata: {
   name: string;
@@ -15,33 +14,21 @@ const metadata: {
 };
 
 export default function Header() {
-  // const el = useRef(null);
-  // useEffect(() => {
-  //   const typed = new Typed(el.current, {
-  //     strings: metadata.greetings,
-  //     typeSpeed: 100,
-  //     loop: true,
-  //     showCursor: false,
-  //   });
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
   return (
-    <header className="w-full gap-4 pt-8 flex justify-center items-start flex-col">
+    <m.header initial={{opacity: 0, y: -100}} transition={{duration: 2, ease: "anticipate"}} animate={{opacity: 1, y: 0}} exit={{opacity: 0}} className="w-full gap-4 pt-8 flex justify-center items-start flex-col">
       <div className="h-8">
-        <span className="text-3xl font-bold text-neutral-600 dark:text-neutral-200">
+        <span className="text-3xl font-bold dark:text-neutral-200 __gradient-text">
           Hello World 👋
         </span>
       </div>
-      <h1 className="text-neutral-400 text-lg">
+      <p className="text-neutral-400 text-lg">
         I&apos;m <span className="font-bold">{metadata.name}</span>, pasonates
         with{" "}
         {metadata.pationates.map((item, index) => (
           <span key={index}>{item}, </span>
         ))}{" "}
         based in <span className="font-bold">{metadata.location}</span>
-      </h1>
-    </header>
+      </p>
+    </m.header>
   );
 }
