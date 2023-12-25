@@ -6,13 +6,15 @@ import { CheckBadgeIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useTheme } from "next-themes";
 
 const NavbarMobile = () => {
+  const { theme, setTheme } = useTheme();
   const [showFloatNav, setShowFloatNav] = useState(false)
   return (
     <> 
       <FloatNav showFloatNav={showFloatNav} setShowFloatNav={setShowFloatNav} />
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between gap-4 items-center">
         <div className="flex justify-center items-center gap-4">
           <div className="flex justify-center items-center">
             <Image
@@ -27,6 +29,11 @@ const NavbarMobile = () => {
             <p className="text-neutral-600 font-bold">{metadata.name} <CheckBadgeIcon className="w-5 inline text-blue-500" /></p>
             <p className="text-neutral-400 text-sm">{metadata.tag}</p>
           </div>
+        </div>
+        <div className="ms-auto" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+          {
+            theme === "dark" ? <MoonIcon className="w-5" /> : <SunIcon className="w-5" />
+          }
         </div>
         <div className="" onClick={() => setShowFloatNav(true)}>
           <Bars3Icon className="w-8" />
