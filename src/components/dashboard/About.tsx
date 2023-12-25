@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+ const metadata = {
+  aboutText: "I am <b>I Komang Gede Apriana</b>, an active student of Informatics Department class of 2021, <b>Udayana University</b>. I am a dedicated and experienced Web Developer (Fullstack Developer) with a strong interest in Machine Learning. Have in-depth knowledge and strong skills in UI/UX Designer and Data Analyst."
+ }
+
 const About = () => {
   const [skills, setSkills] = useState([]);
 
@@ -20,12 +24,7 @@ const About = () => {
         About Me
       </div>
       <div className="sm:col-span-3 text-neutral-400 text-base">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quo
-        velit. Quia beatae optio non perferendis, rem ipsam quisquam maxime hic
-        voluptas at nam reiciendis quis ex ullam veritatis rerum magni. Eum,
-        odio, suscipit doloremque nulla quia porro ea dolorum obcaecati sapiente
-        magni repellendus at aspernatur impedit neque, numquam asperiores quos.
-        Dignissimos, illum commodi veritatis suscipit tenetur
+        <p dangerouslySetInnerHTML={{__html: metadata.aboutText}}></p>
       </div>
       <div className="text-lg text-neutral-600 font-bold dark:text-neutral-200">
         Skills
@@ -40,7 +39,7 @@ const About = () => {
               ) => {
                 return (
                   <Link
-                    className="hover:border-b p-2 transition-all duration-300 hover:scale-105"
+                    className="p-2 transition-all grayscale hover:grayscale-0 duration-300"
                     href={item.link}
                     key={item._id}
                   >
