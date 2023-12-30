@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7430f66d-0ab4-47fd-ae89-da0ac423e05b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/educations/EducationSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/educations/EducationSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/education.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/education.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,7 @@
   }
 }</component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -59,13 +58,6 @@
           </list>
         </option>
       </RecentBranches>
-    </option>
-  </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="main" />
-      </list>
     </option>
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -95,7 +87,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "development",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/redqueen/WebstormProjects/personal-portfolio/src/components/globals",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -138,6 +130,7 @@
       <workItem from="1698151864209" duration="11364000" />
       <workItem from="1698201910380" duration="1939000" />
       <workItem from="1698206209238" duration="8000000" />
+      <workItem from="1703933623855" duration="88000" />
     </task>
     <servers />
   </component>
